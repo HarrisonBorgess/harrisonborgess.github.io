@@ -345,7 +345,7 @@ width:25%;
 }
 
 .home__social{
-height: max-content;
+height: 100px;
 position:absolute ;
 left: -3rem;
 top: 0;
@@ -892,12 +892,10 @@ font-weight: var(--font-medium);
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width:450px){
-  .home__container,
-  .about__container,
-  .projects__container{
-    grid-template-columns: 350px;
-    justify-content: center;
+  .container{
+    margin-inline: 1rem;
   }
+  
 
   .home__image{
     width: 180px;
