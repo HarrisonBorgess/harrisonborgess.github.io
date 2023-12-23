@@ -892,8 +892,11 @@ font-weight: var(--font-medium);
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width:450px){
-  .container{
-    margin-inline: 1rem;
+  .home__container,
+  .about__container,
+  .projects__container{
+    grid-template-columns: 350px;
+    justify-content: center;
   }
 
   .home__image{
