@@ -315,8 +315,13 @@ img {
 
 /* HOME */
 .home__container {
-  padding-top: 2rem;
-}
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+  }
+
 
 .home__name {
   font-size: var(--biggest-font-size);
@@ -372,10 +377,6 @@ img {
 
 .home__social-link:hover {
   background-color: var(--black-color);
-}
-
-.home__info {
-  margin-top: 4rem;
 }
 
 .home__description {
@@ -484,42 +485,6 @@ img {
 
 .about__container {
   row-gap: 0;
-}
-
-.about__perfil {
-  position: relative;
-  justify-self: center;
-  margin-block: 2.5rem 4.5rem;
-}
-
-.about__image {
-  width: 220px;
-}
-
-.about__img {
-  position: relative;
-  border: 4px solid var(--white-color);
-  z-index: 1;
-}
-
-.about__shadow,
-.about__box {
-  position: absolute;
-}
-
-.about__shadow {
-  width: 150px;
-  height: 385px;
-  background-color: var(--body-color);
-  top: -2.5rem;
-  right: -3.5rem;
-  border-bottom: 4px solid var(--first-color);
-  transition: background-color 0.4s;
-}
-
-.about__perfil .geometric-box {
-  top: 1.5rem;
-  right: -2.8rem;
 }
 
 .about__box {
@@ -910,12 +875,6 @@ img {
   .about__image {
     width: 180px;
   }
-
-  .about__shadow {
-    right: -2.5rem;
-    height: 330px;
-  }
-
   .home__name {
     font-size: var(--biggest-font-size);
   }
@@ -1042,7 +1001,8 @@ img {
     grid-template-columns: repeat(2, 460px);
     gap: 2rem 4rem;
     align-items: center;
-    padding-block: 5.5rem;
+    padding-bottom: 200px;
+    padding-top: 0px;
   }
 
   .home__perfil {
@@ -1107,10 +1067,7 @@ img {
     padding-block: 1rem;
   }
 
-  .about__perfil {
-    order: -1;
-    grid-row: 1/3;
-  }
+
 
   .about__image {
     width: 350px;
@@ -1135,8 +1092,7 @@ img {
   }
 
   .about__container .section__title-1 {
-    align-self: flex-end;
-    margin-inline: 0;
+    align-self: center;
   }
 
   .about__info {
