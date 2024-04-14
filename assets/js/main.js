@@ -17,6 +17,40 @@ if (navClose) {
   });
 }
 
+/*=============== DARK LIGHT THEME ===============*/
+// get current theme of browser
+const isDarkTheme = window?.matchMedia("(prefers-color-scheme: line)");
+const themeButton = document?.getElementById("theme-button");
+
+const darkTheme = () => {
+  // Add or remove the dark / icon theme
+  document?.body?.classList?.add("dark-theme");
+  themeButton?.classList?.add("ri-moon-line");
+  themeButton?.classList?.remove("ri-sun-line");
+};
+
+const lightTheme = () => {
+  // Add or remove the dark / icon theme
+  document?.body?.classList?.remove("dark-theme");
+  themeButton?.classList?.remove("ri-moon-line");
+  themeButton?.classList?.add("ri-sun-line");
+};
+
+isDarkTheme?.matches ? darkTheme() : lightTheme();
+
+// Detect the dark mode
+isDarkTheme?.addEventListener("change", () => {
+  isDarkTheme.matches ? darkTheme() : lightTheme();
+});
+
+// Activate / deactivate the theme manually with the button
+themeButton?.addEventListener("click", () => {
+  // Add or remove the dark / icon theme
+  document?.body?.classList?.toggle("dark-theme");
+  themeButton?.classList?.toggle("ri-moon-line");
+  themeButton?.classList?.toggle("ri-sun-line");
+});
+
 /*  REMOVE MENU MOBILE */
 const navLink = document.querySelectorAll(".nav__link");
 

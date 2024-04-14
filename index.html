@@ -39,29 +39,31 @@
       </li>
 
       <li class="nav__item">
-         <a href="#docs" class="nav__link">Documentação Profissional</a>
+         <a href="#contact" class="nav__link">Contatos</a>
          </li>
 
       <li class="nav__item">
-      <a href="#contact" class="nav__link nav__link-button">Contato</a>
+      <a href="https://drive.google.com/file/d/1fH1ESMl7NIAn2q2woVIYdOruwWp23i8q/view" target="_blank" class="nav__link nav__link-button">Download CV</a>
       </li>
+      
       </ul>
 
       <!-- close button -->
       <div class="nav__close" id="nav-close">
       <i class="ri-close-line"></i>
-      </div>
+         </div>
       </div>
 
       <div class="nav__buttons">
+      <!-- Theme button -->
+      <i class="change-theme" id="theme-button"></i>
       <!-- toogle button -->
       <div class="nav__toggle" id="nav-toggle">
       <i class="ri-menu-4-line"></i>
       </div> 
       </div>
-
-   </nav>
-   </header>
+      </nav>
+      </header>
 
   <!-- MAIN -->
    <main class="main">
@@ -70,11 +72,13 @@
    <section class="home section" id="home">
       <div class="home__container container grid">
          <h1 class="home__name">Harrison Borges</h1>
+
          <div class="home__perfil">
             <div class="home__image">
                <img src="assets/img/home-perfil.jpg" alt="image" class="home__img">
                <div class="home__shadow"></div>
                <div class="geometric-box"></div>
+               <img src="/assets/img/curved-arrow.svg" alt="curved-arrow" class="home__arrow">
             </div>
 
             <div class="home__social">
@@ -93,28 +97,47 @@
                <div class="home__scroll-box">
                   <i class="ri-arrow-down-s-line"></i>
                </div>
-               <span class="home__scroll-text">scroll down</span>
+               <span class="home__scroll-text">Role para baixo.</span>
             </a>
          </div>
       </div>
    </section>
 
    <!--ABOUT-->
-   <section class="about section" id="about">
-      <div class="about__container container grid">
-         <h2 class="section__title-1">
-            <span>Sobre mim</span>
-         </h2>
-         <div class="class about__info">
+    <section class="about section" id="about">
+        <div class="about__container container grid">
+          <h2 class="section__title-1">Sobre Mim.</h2>
+
+          <div class="about__perfil">
+            <div class="about__image">
+              <img
+                src="/assets/img/home-perfil.jpg"
+                alt="about-perfil"
+                class="about__img"
+              />
+              <div class="about__shadow"></div>
+
+              <div class="geometric-box"></div>
+              <img
+                src="/assets/img/random-lines.svg"
+                alt="random-lines"
+                class="about__line"
+              />
+              <div class="about__box"></div>
+            </div>
+          </div>
+
+          <div class="class about__info">
             <p class="about__description">
-               Sou Brasileiro,residente da cidade de <b>Salvador</b>, tenho 22 anos de idade e atualmente estou me dedicando aos estudos 
+               Sou Brasileiro residente da cidade de <b>Salvador</b>,tenho 22 anos de idade e atualmente estou me dedicando aos estudos 
                voltados ao desenvolvimento de software,com formatura para <b>dezembro de 2024.</b>
             </p>
 
             <ul class="about__list">
                <li class="about__item">
-                  Desenvolvimento focado na linguagem de programação Java e seus frameworks além de experiências com
-                  linguagens de front-end, desenvolvimento web,mobile e ferramentas de design gráfico. </li>
+                  Conhecimentos sólidos na linguagem de Programação
+                  Java e seus frameworks, banco de dados e desenvolvimento web. Habilidade em resolução de
+                  problemas e aprendizagem rápida. </li>
 
                   <ul class="about__list">
                      <li class="about__item">
@@ -122,19 +145,153 @@
                      </li>
                   </ul>
             </ul>
-                  <div class="about__buttons">
-                     <a href="#contact" class="button">
-                        <i class="ri-send-plane-line"></i> Contato
-                     </a>
 
-                     <a href="https://www.linkedin.com/in/harrisonborges/" target="_blank" class="button__ghost">
-                        <i class="ri-linkedin-box-line"></i>
-                     </a>
-                  </div>
+            <div class="about__buttons">
+               <a href="https://drive.google.com/file/d/1fH1ESMl7NIAn2q2woVIYdOruwWp23i8q/view" target="_blank"  class="button"
+              >
+                <i class="ri-download-2-line"></i> Download CV
+              </a>
+
+              <a href="#contact" class="button__ghost">
+                <i class="ri-send-plane-line"></i>
+                <span class="button__ghost-title">Entre em Contato</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+   <!--EXPERIENCE-->
+   <section class="experience section" id="experience">
+         <h2 class="section__title-2">
+           <span>Experiências.</span>
+         </h2>
+ 
+         <div class="experience__container container grid">
+           <div class="experience__box" id="experience-box-left">
+             <h2 class="experience__box__title section__title-3">Front End</h2>
+             <div class="experience__tabs">
+               <article>
+                 <img
+                   src="/assets/img/checkmark.webp"
+                   alt="Experience icon"
+                   class="icon"
+                 />
+                 <div class="article__box"></div>
+                 <div class="article__title">
+                   <h3>HTML</h3>
+                 </div>
+               </article>
+               <article>
+                 <img
+                   src="/assets/img/checkmark.webp"
+                   alt="Experience icon"
+                   class="icon"/>
+                 <div class="article__box"></div>
+                 <div class="article__title">
+                   <h3>CSS</h3>
+                 </div>
+               </article>
+               <article>
+                 <img
+                   src="/assets/img/checkmark.webp"
+                   alt="Experience icon"
+                   class="icon"
+                 />
+                 <div class="article__box"></div>
+                 <div class="article__title">
+                   <h3>Javascript</h3>
+                 </div>
+               </article>
+               <article>
+                 <img
+                   src="/assets/img/checkmark.webp"
+                   alt="Experience icon"
+                   class="icon"
+                 />
+                 <div class="article__box"></div>
+                 <div class="article__title">
+                   <h3>Figma
+                   </h3>
+                 </div>
+               </article>
+             </div>
+           </div>
+           <div class="experience__box" id="experience-box-right">
+             <h2 class="experience__box__title section__title-3">Back End</h2>
+             <div class="experience__tabs">
+               <article>
+                 <img
+                   src="/assets/img/checkmark.webp"
+                   alt="Experience icon"
+                   class="icon"
+                 />
+                 <div class="article__box"></div>
+                 <div class="article__title">
+                   <h3>Java</h3>
+                 </div>
+               </article>
+               <article>
+                 <img
+                   src="/assets/img/checkmark.webp"
+                   alt="Experience icon"
+                   class="icon"
+                 />
+                 <div class="article__box"></div>
+                 <div class="article__title">
+                   <h3>Spring Boot</h3>
+                 </div>
+               </article>
+               <article>
+                 <img
+                   src="/assets/img/checkmark.webp"
+                   alt="Experience icon"
+                   class="icon"
+                 />
+                 <div class="article__box"></div>
+                 <div class="article__title">
+                   <h3>PostgreSQL</h3>
+                 </div>
+               </article>
+               <article>
+                 <img
+                   src="/assets/img/checkmark.webp"
+                   alt="Experience icon"
+                   class="icon"
+                 />
+                 <div class="article__box"></div>
+                 <div class="article__title">
+                   <h3>API REST</h3>
+                 </div>
+               </article>
+               <article>
+                 <img
+                   src="/assets/img/checkmark.webp"
+                   alt="Experience icon"
+                   class="icon"
+                 />
+                 <div class="article__box"></div>
+                 <div class="article__title">
+                   <h3>JUnit</h3>
+                 </div>
+               </article>
+               <article>
+                 <img
+                   src="/assets/img/checkmark.webp"
+                   alt="Experience icon"
+                   class="icon"
+                 />
+                 <div class="article__box"></div>
+                 <div class="article__title">
+                   <h3>Node JS</h3>
+                 </div>
+               </article>
+             </div>
+           </div>
          </div>
-      </div>
-   </section>
-
+       </section>
+ 
    <!--PROJECTS-->
    <section class="projects section" id="projects">
       <h2 class="section__title-1">
@@ -145,7 +302,7 @@
          <article class="projects__card">
             <div class="projects__image">
                <img src="assets/img/project-1.jpg" alt="image" class="projects__img">
-               <a href="https://harrisonborgess.github.io/Calculadora-de-IMC/" target="_blank"
+               <a href="https://harrisonborgess.github.io/IMC/" target="_blank"
                   class="projects__button button">
                   <i class="ri-arrow-right-up-line"></i>
                </a>
@@ -197,74 +354,6 @@
                </p>
             </div>
             <div class="projects__buttons">
-
-               <!-- two bottons web and github -->
-               <!-- <a href="https://github.com/" target="_blank" class="projects__link">
-                        <i class="ri-github-line"></i> View
-                     </a>
-
-                     <a href="https://github.com" target="_blank" class="projects__link">
-                        <i class="ri-github-line"></i> View
-                     </a> -->
-            </div>
-         </article>
-      </div>
-   </section>
-
-   <!--DOCS-->
-   <section class="docs section" id="docs">
-      <h2 class="section__title-2">
-         <span>Documentação Profissional</span>
-      </h2>
-      
-         <!--CV-->
-      <div class="docs__container container grid">
-         <article class="docs__card">
-            <div class="docs__border"></div>
-            <div class="docs__content">
-               <div class="docs__icon">
-                  <div class="docs__box"></div>
-                  <a href="https://drive.google.com/file/d/1fH1ESMl7NIAn2q2woVIYdOruwWp23i8q/view?usp=sharing"
-                     target="_blank" class="docs__download"><i class="ri-download-line"></i></i></a>
-               </div>
-               <h2 class="docs__title">Currículo</h2>
-               <p class="docs__description">
-                  Um documento elaborado que destaca minha experiência,
-                  habilidades e realizações profissionais.
-               </p>
-            </div>
-         </article>
-
-         <!--PRESENTATION LETTER-->
-         <article class="docs__card">
-            <div class="docs__border"></div>
-            <div class="docs__content">
-               <div class="docs__icon">
-                  <div class="docs__box"></div>
-                  <a href="https://drive.google.com/file/d/1zdYiJVnDQrekevajrrtGSPaLUDmLJVL8/view?usp=drive_link"
-                     target="_blank" class="docs__download"><i class="ri-download-line"></i></i></a>
-               </div>
-               <h2 class="docs__title">Carta de Apresentação</h2>
-               <p class="docs__description">
-                  Compartilho sobre quem sou, minhas motivações e por que acredito ser a escolha ideal para a sua empresa.
-               </p>
-            </div>
-         </article>
-
-         <!--FAQ-->
-         <article class="docs__card">
-            <div class="docs__border"></div>
-            <div class="docs__content">
-               <div class="docs__icon">
-                  <div class="docs__box"></div>
-                  <a href="https://drive.google.com/file/d/1a090jRxP7gTH3aADz86NuUNsvN0RR_9r/view?usp=drive_link"
-                     target="_blank" class="docs__download"><i class="ri-download-line"></i></i></a>
-               </div>
-               <h2 class="docs__title">FAQ Entrevista</h2>
-               <p class="docs__description">
-                  Este FAQ aborda as principais de perguntas feitas durante as entrevistas,
-                  forneço respostas detalhadas para destacar minhas habilidades e experiências.
-               </p>
             </div>
          </article>
       </div>
@@ -278,10 +367,10 @@
                <span>Contato</span>
             </h2>
             <p class="contact__description-1">
-               Estou disponível para receber a sua mensagens por meio deste formulário,Sinta-se à vontade para preenchê-lo
+               Estou disponível para receber a sua mensagens por meio deste formulário.
             </p>
             <p class="contact__description-2">
-               Atenciosamente,Harrison Borges.
+               Att,Harrison Borges.
             </p>
             <div class="geometric-box"></div>
          </div>
@@ -317,6 +406,36 @@
                <button type="submite" class="contact__button button">
                   <i class="ri-send-plane-line"></i> Enviar Mensagem
                </button>
+            </div>
+                  <div class="contact__social">
+                     <img
+                       src="/assets/img/curved-arrow.svg"
+                       alt="curved-arrow"
+                       class="contact__social-arrow"
+                     />
+         
+                     <div class="contact__social-data">
+                       <div>
+                         <p class="contact__social-description-1">Se prefererir</p>
+         
+                         <p class="contact__social-description-2">
+                           me envie uma mensagens pelas redes sociais
+                         </p>
+                       </div>
+    
+                       <div class="contact__social-links">
+                         <a
+                           href="https://www.linkedin.com/in/harrisonborges/"
+                           target="_blank"
+                           class="contact__social-link"
+                         >
+                           <i class="ri-linkedin-box-line"></i>
+                         </a>
+                         <a
+                           href="https://github.com/HarrisonBorgess"
+                           target="_blank"
+                           class="contact__social-link"><i class="ri-github-line"></i></a>
+               </button>
             </form>
          </div>
       </div>
@@ -324,17 +443,19 @@
    </main>
 
    <!--FOOTER-->
-   <footer class="footer">
+    <footer class="footer">
       <div class="footer__container container grid">
-         <ul class="footer__links">
-            <li> <a href="#about" class="footer__link">Sobre</a> </li>
-            <li> <a href="#projects" class="footer__link">Projetos</a> </li>
-            <li> <a href="#docs" class="footer__link">Doc. Profissional</a> </li>
-         </ul>
-         <span class="footer__copy"> &#169; <p>Harrison Borges </p>
-         </span>
+        <ul class="footer__links">
+          <li><a class="footer__link" href="#about">Sobre</a></li>
+          <li><a class="footer__link" href="#experience">Experiências</a></li>
+          <li><a class="footer__link" href="#projects">Projetos</a></li>
+        </ul>
+
+        <span class="footer__copy">
+          &#169; Todos os Direitos Reservador por Harrison Borges</a>
+        </span>
       </div>
-   </footer>
+    </footer>
 
    <!--SCROLL UP-->
    <a href="#" class="scrollup" id="scroll-up"> <i class="ri-arrow-up-s-line"></i> </a>
