@@ -6,7 +6,7 @@
   --header-height: 3.5rem;
   /* Colors */
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(187, 98%, 50%);
+  --first-color:hsl(187, 55%, 46%);
   --black-color: hsl(0, 0%, 0%);
   --black-color-light: hsl(0, 0%, 40%);
   --white-color: hsl(0, 0%, 95%);
@@ -32,6 +32,7 @@
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
 
+
   /* Font weight */
   --font-regular: 400;
   --font-medium: 500;
@@ -41,6 +42,21 @@
   /* z index */
   --z-tooltip: 10;
   --z-fixed: 100;
+}
+
+
+/*=============== THEME ===============*/
+.nav__buttons {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.change-theme {
+  font-size: 1.25rem;
+  color: var(--title-color);
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
 
 /*========== Variables Dark theme ==========*/
@@ -134,9 +150,7 @@ body.dark-theme {
   background-color: hsl(0, 0%, 40%);
 }
 
-.dark-theme .contact__social {
-  background-color: hsl(0, 0%, 20%);
-}
+
 /* Responsive typography */
 @media screen and (min-width: 1150px) {
   :root {
@@ -224,7 +238,7 @@ img {
   content: "";
   width: 40px;
   height: 28px;
-  background-color: hsla(195, 98%, 50%, 0.3);
+  background-color:hsla(187, 55%, 46%, 0.322);
   position: absolute;
   top: -4px;
   right: -8px;
@@ -239,7 +253,7 @@ img {
   position: absolute;
   width: 20px;
   height: 20px;
-  background-color: hsla(195, 89%, 46%, 0.589);
+  background-color:hsl(187, 55%, 46%);
   rotate: -30deg;
   z-index: 10;
 }
@@ -508,7 +522,7 @@ img {
 .home__description b {
   background: linear-gradient(
     90deg,
-    hsla(199, 98%, 50%, 0.3),
+    hsla(187, 53%, 51%, 0.493),
     hsla(14, 98%, 50%, 0)
   );
 }
@@ -580,7 +594,7 @@ img {
 }
 
 .button:hover {
-  background-color: var(--second-color);
+  background-color: var(--first-color);
 }
 
 .button__ghost {
@@ -856,14 +870,10 @@ img {
   column-gap: 1rem;
 }
 
-.projects__card:hover {
-  background-color: hsla(195, 98%, 50%, 0.3);
-}
-
 /* CONTACT  */
 .contact {
   padding-bottom: 0;
-  background-color: var(--container-color);
+
 }
 
 .contact__container {
@@ -994,12 +1004,12 @@ img {
 }
 
 .contact__button {
-  background-color: var(--first-color);
+  background-color: var(--black-color-light);
   cursor: pointer;
 }
 
 .contact__button:disabled {
-  background-color: var(--black-color-light);
+  background-color: var(--first-color);
   cursor: not-allowed;
 }
 /* Opaque placeholder */
@@ -1628,10 +1638,6 @@ img {
 
   .dark-theme .contact__data {
     box-shadow: 4px 0 8px hsla(0, 0%, 4%, 0.3);
-  }
-
-  .dark-theme .contact__social {
-    background-color: var(--container-color);
   }
 
   .footer__container {
