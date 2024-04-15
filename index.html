@@ -8,9 +8,31 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
    <link rel="stylesheet" href="assets/css/styles.css">
    <title>Harrison Borges</title>
+   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 </head>
 <body>
    
+  <!-- captcha -->
+
+  <form method="post">
+    <div> 
+      <label>Nome</label>
+      <input type="text" name="nome" required>
+    </div>
+ 
+    <div> 
+      <label>Email</label>
+      <input type="text" name="email" required>
+    </div>
+
+
+    
+ 
+
+  </form>
+
+
   <!-- HEADER -->
    <header class="header" id="header">
 
@@ -107,38 +129,28 @@
     <section class="about section" id="about">
         <div class="about__container container grid">
           <h2 class="section__title-1">Sobre Mim.</h2>
-
           <div class="about__perfil">
-            <div class="about__image">
-              <img
-                src="/assets/img/home-perfil.jpg"
-                alt="about-perfil"
-                class="about__img"
-              />
-              <div class="about__shadow"></div>
-
-              <div class="geometric-box"></div>
-              <img
-                src="/assets/img/random-lines.svg"
-                alt="random-lines"
-                class="about__line"
-              />
-              <div class="about__box"></div>
-            </div>
+            <div>
+              <section class="mapbox" data-mapbox>
+                <figure>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d282458.24524855026!2d-38.60889669148153!3d-12.908663004051483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x716112050422ebd%3A0xf71c84369573db9d!2sSalvador%2C%20BA!5e0!3m2!1spt-BR!2sbr!4v1713151370036!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </figure>
+              </section>
+              </div>
           </div>
 
           <div class="class about__info">
+            <div class="class about__info">
             <p class="about__description">
-               Sou Brasileiro residente da cidade de <b>Salvador</b>,tenho 22 anos de idade e atualmente estou me dedicando aos estudos 
-               voltados ao desenvolvimento de software,com formatura para <b>dezembro de 2024.</b>
+                Olá me chamo Harrison,moro na cidade de <b>Salvador</b>,sou desenvolvedor Back End focado sempre em aprender, crescer e buscar desafios que permitam expandir minhas habilidades.
             </p>
 
-            <ul class="about__list">
-               <li class="about__item">
-                  Conhecimentos sólidos na linguagem de programação
-                  Java e seus frameworks, banco de dados e desenvolvimento web.</li>
-                  </ul>
-            </ul>
+            <p class="about__description">
+              Tenho conhecimentos sólidos na linguagem Java e seus frameworks,banco de dados e desenvolvimento web.
+            </p>
+        </div>
+        
+          
 
             <div class="about__buttons">
                <a href="https://drive.google.com/file/d/1fH1ESMl7NIAn2q2woVIYdOruwWp23i8q/view" target="_blank"  class="button"
@@ -355,86 +367,87 @@
 
    <!--CONTACT-->
    <section class="contact section" id="contact">
-      <div class="contact__container grid">
-         <div class="contact__data">
-            <h2 class="section__title-2">
-               <span>Contato</span>
-            </h2>
-            <p class="contact__description-1">
-               Estou disponível para receber a sua mensagens por meio deste formulário.
-            </p>
-            <p class="contact__description-2">
-               Att,Harrison Borges.
-            </p>
-            <div class="geometric-box"></div>
-         </div>
-         <div class="contact__mail">
-            <h2 class="contact__title"> Contato </h2>
-            <form action="" class="contact__form" id="contact-form">
-               <div class="contact__group">
+    <div class="contact__container grid">
+       <div class="contact__data">
+          <h2 class="section__title-2">
+             <span>Contato</span>
+          </h2>
+          <p class="contact__description-1">
+             Estou disponível para receber a sua mensagens por meio deste formulário.
+          </p>
+          <p class="contact__description-2">
+             Att,Harrison Borges.
+          </p>
+          <div class="geometric-box"></div>
+       </div>
+       <div class="contact__mail">
+          <h2 class="contact__title"> Contato </h2>
+          <form action="" class="contact__form" id="contact-form">
+             <div class="contact__group">
 
-                  <div class="contact__box">
-                     <input type="text" name="user_name" class="contact__input" id="name" required placeholder="Nome">
-                     <label for="name" class="contact__label">Nome</label>
-                  </div>
+                <div class="contact__box">
+                   <input type="text" name="user_name" class="contact__input" id="name" required placeholder="Nome">
+                   <label for="name" class="contact__label">Nome</label>
+                </div>
 
-                  <div class="contact__box">
-                     <input type="email" name="user_email" class="contact__input" id="email" required
-                        placeholder="Email">
-                     <label for="email" class="contact__label">Email</label>
-                  </div>
-               </div>
+                <div class="contact__box">
+                   <input type="email" name="user_email" class="contact__input" id="email" required
+                      placeholder="Email">
+                   <label for="email" class="contact__label">Email</label>
+                </div>
+             </div>
 
-               <div class="contact__box">
-                  <input type="text" name="user_subject" class="contact__input" id="email" required
-                     placeholder="Assunto">
-                  <label for="subject" class="contact__label">Assunto</label>
-               </div>
+             <div class="contact__box">
+                <input type="text" name="user_subject" class="contact__input" id="email" required
+                   placeholder="Assunto">
+                <label for="subject" class="contact__label">Assunto</label>
+             </div>
 
-               <div class="contact__box contact__area">
-                  <textarea name="user_message" id="message" class="contact__input" required
-                     placeholder="Mensagem"></textarea>
-                  <label for="message" class="contact__label">Message</label>
-               </div>
-               <p class="contact__message" id="contact-message"></p>
-               <button type="submite" class="contact__button button">
-                  <i class="ri-send-plane-line"></i> Enviar Mensagem
-               </button>
-            </div>
-                  <div class="contact__social">
-                     <img
-                       src="/assets/img/curved-arrow.svg"
-                       alt="curved-arrow"
-                       class="contact__social-arrow"
-                     />
-         
-                     <div class="contact__social-data">
-                       <div>
-                         <p class="contact__social-description-1">Se prefererir</p>
-         
-                         <p class="contact__social-description-2">
-                           me envie uma mensagem pelas redes sociais.
-                         </p>
-                       </div>
-    
-                       <div class="contact__social-links">
-                         <a
-                           href="https://www.linkedin.com/in/harrisonborges/"
-                           target="_blank"
-                           class="contact__social-link"
-                         >
-                           <i class="ri-linkedin-box-line"></i>
-                         </a>
-                         <a
-                           href="https://github.com/HarrisonBorgess"
-                           target="_blank"
-                           class="contact__social-link"><i class="ri-github-line"></i></a>
-               </button>
-            </form>
-         </div>
-      </div>
-   </section>
-   </main>
+             <div class="contact__box contact__area">
+                <textarea name="user_message" id="message" class="contact__input" required
+                   placeholder="Mensagem"></textarea>
+                <label for="message" class="contact__label">Mensagem</label>
+             </div>
+             <p class="contact__message" id="contact-message"></p>
+             <div class="g-recaptcha" data-sitekey="6Ldr57spAAAAAJuoRa_uiT5FdTYxYONH0Epoxdfh"></div>
+             <button type="submite" class="contact__button button">
+                <i class="ri-send-plane-line"></i> Enviar Mensagem
+             </button>
+          </div>
+                <div class="contact__social">
+                   <img
+                     src="/assets/img/curved-arrow.svg"
+                     alt="curved-arrow"
+                     class="contact__social-arrow"
+                   />
+       
+                   <div class="contact__social-data">
+                     <div>
+                       <p class="contact__social-description-1">Se prefererir</p>
+       
+                       <p class="contact__social-description-2">
+                         me envie uma mensagem pelas redes sociais.
+                       </p>
+                     </div>
+  
+                     <div class="contact__social-links">
+                       <a
+                         href="https://www.linkedin.com/in/harrisonborges/"
+                         target="_blank"
+                         class="contact__social-link"
+                       >
+                         <i class="ri-linkedin-box-line"></i>
+                       </a>
+                       <a
+                         href="https://github.com/HarrisonBorgess"
+                         target="_blank"
+                         class="contact__social-link"><i class="ri-github-line"></i></a>
+             </button>
+          </form>
+       </div>
+    </div>
+ </section>
+ </main>
 
    <!--FOOTER-->
     <footer class="footer">
