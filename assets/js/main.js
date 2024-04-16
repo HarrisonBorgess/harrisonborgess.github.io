@@ -27,6 +27,10 @@ const darkTheme = () => {
   document?.body?.classList?.add("dark-theme");
   themeButton?.classList?.add("ri-moon-line");
   themeButton?.classList?.remove("ri-sun-line");
+
+  // Change the image for dark theme
+  const image = document.querySelector('.home__img');
+  image.src = "assets/img/home-perfil-dark.jpg";
 };
 
 const lightTheme = () => {
@@ -34,6 +38,10 @@ const lightTheme = () => {
   document?.body?.classList?.remove("dark-theme");
   themeButton?.classList?.remove("ri-moon-line");
   themeButton?.classList?.add("ri-sun-line");
+
+  // Change the image for light theme
+  const image = document.querySelector('.home__img');
+  image.src = "assets/img/home-perfil.jpg";
 };
 
 isDarkTheme?.matches ? darkTheme() : lightTheme();
@@ -49,8 +57,15 @@ themeButton?.addEventListener("click", () => {
   document?.body?.classList?.toggle("dark-theme");
   themeButton?.classList?.toggle("ri-moon-line");
   themeButton?.classList?.toggle("ri-sun-line");
-});
 
+  // Toggle the image for dark/light theme
+  const image = document.querySelector('.home__img');
+  if (document.body.classList.contains('dark-theme')) {
+    image.src = "assets/img/home-perfil-dark.jpg";
+  } else {
+    image.src = "assets/img/home-perfil.jpg";
+  }
+});
 /*  REMOVE MENU MOBILE */
 const navLink = document.querySelectorAll(".nav__link");
 
