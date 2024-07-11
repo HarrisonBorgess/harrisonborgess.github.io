@@ -173,4 +173,4 @@ sr.reveal(
             .contact__social, .contact__data`,
   { origin: "left" }
 );
-sr.reveal(`.docs__card, .projects__card`, { interval: 100 });
+sr.reveal(`.docs__card, .testimonial__card`, { interval: 100 });

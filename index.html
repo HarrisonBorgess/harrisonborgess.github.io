@@ -33,7 +33,7 @@
       </li>
 
       <li class="nav__item">
-      <a href="#projects" class="nav__link">Projetos</a>
+      <a href="#testimonial" class="nav__link">Projetos</a>
       </li>
 
       <li class="nav__item">
@@ -41,7 +41,7 @@
       </li>
 
       <li class="nav__item">
-      <a href="https://drive.google.com/file/d/1jCl76jZ6VbBMFu1y71Q1tbuG2c85AHJc/view" target="_blank" class="nav__link nav__link-button">Currículo</a>
+      <a href="https://drive.google.com/file/d/1awxQDpFqQJnoF3kexFxkPaaVZ0KywyEh/view?usp=drive_link" target="_blank" class="nav__link nav__link-button">Currículo</a>
       </li>
       </ul>
 
@@ -70,13 +70,14 @@
      <section class="home section" id="home">
      <div class="home__container container grid">
 
-      <h1 class="home__name">Harrison Borges</h1>
+      <h1 class="home__name">Harrison</h1>  
+
       <div class="home__perfil">
       <div class="home__image">
       <img src="assets/img/home-perfil.jpg" alt="image" class="home__img">
-      <div class="home__shadow"></div>
-      <div class="geometric-box"></div>
-      <img src="/assets/img/curved-arrow.svg" alt="curved-arrow" class="home__arrow">
+      <!--  <div class="home__shadow"></div> --> 
+      <!--  <div class="geometric-box"></div>  --> 
+      <!-- <img src="/assets/img/curved-arrow.svg" alt="curved-arrow" class="home__arrow">  --> 
       </div>
 
       <div class="home__social">
@@ -87,9 +88,15 @@
       </div>
 
       <div class="home__info">
-      <p class="home__description">
-      <b>Desenvolvedor Back End</b> Graduando em Engenharia de Software pela Universidade Católica do Salvador.
+      <p class="home__subtitle">
+      <b>Engenheiro de Software</b>
       </p>
+
+      <p class="home__description " style="height: 95px;
+  " >
+        <b>Transformando ideias em realidade através de códigos e inovação 🌟</b>
+        </p>
+        
       <a href="#about" class="home__scroll">
       <div class="home__scroll-box">
       <i class="ri-arrow-down-s-line"></i>
@@ -127,7 +134,7 @@
     </p>
     </div>
 
-    <div class="about__buttons"> <a href="https://drive.google.com/file/d/1jCl76jZ6VbBMFu1y71Q1tbuG2c85AHJc/view?usp=sharing" target="_blank" class="button"> Currículo</a>
+    <div class="about__buttons"> <a href="https://drive.google.com/file/d/1awxQDpFqQJnoF3kexFxkPaaVZ0KywyEh/view?usp=drive_link" target="_blank" class="button"> Currículo</a>
 
     <a href="#contact" class="button__ghost">
     <i class="ri-send-plane-line"></i>
@@ -140,9 +147,8 @@
 
    <!--EXPERIENCE-->
    <section class="experience section" id="experience">
-
     <h2 class="section__title-2">
-    <span>Experiências.</span>
+      <span>Experiências</span>
     </h2>
     <div class="experience__container container grid">
     <div class="experience__box" id="experience-box-left">
@@ -152,13 +158,12 @@
     
     <article>
     <img src="/assets/img/checkmark.webp" alt="Experience icon" class="icon"/>
-    <div class="article__box"></div> <div class="article__title">
+    <div class="article__title">
     <h3>HTML</h3>
     </div>
     </article>
 
     <article> <img src="/assets/img/checkmark.webp" alt="Experience icon" class="icon"/>
-    <div class="article__box"></div>
     <div class="article__title"> 
     <h3>CSS</h3>
     </div>
@@ -166,7 +171,6 @@
 
     <article>
     <img src="/assets/img/checkmark.webp" alt="Experience icon" class="icon" />
-    <div class="article__box"> </div>
     <div class="article__title">
     <h3>Javascript</h3>
     </div>
@@ -174,7 +178,6 @@
 
     <article>
     <img src="/assets/img/checkmark.webp" alt="Experience icon" class="icon"/>
-    <div class="article__box"></div>
     <div class="article__title"> <h3>Figma </h3>
     </div>
     </article>
@@ -186,7 +189,6 @@
     <div class="experience__tabs">
     <article>
     <img src="/assets/img/checkmark.webp" alt="Experience icon" class="icon" />
-    <div class="article__box"></div>
     <div class="article__title">
     <h3>Java</h3>
     </div>
@@ -194,14 +196,12 @@
 
     <article>
     <img src="/assets/img/checkmark.webp" alt="Experience icon" class="icon"/>
-    <div class="article__box"></div>
     <div class="article__title">
     <h3>Spring Boot</h3> </div>
     </article>
     
     <article>
     <img src="/assets/img/checkmark.webp" alt="Experience icon" class="icon" />
-    <div class="article__box"></div>
     <div class="article__title">
     <h3>PostgreSQL</h3>
     </div>
@@ -209,72 +209,124 @@
 
     <article>
       <img src="/assets/img/checkmark.webp" alt="Experience icon" class="icon" />
-      <div class="article__box"></div>
       <div class="article__title">
       <h3>API REST</h3>
       </div>
       </article>
     </section>
+
+     <!--PROJECTS-->
+     <section class="projects section" id="projects">
+      <h2 class="section__title-1">
+      <span>Projetos</span>
+      </h2>
+  
+      <div class="projects__container container grid">
+      <article class="projects__card">
+      <div class="projects__image">
+      <img src="assets/img/project-1.jpg" alt="image" class="projects__img">
+      <a href="https://harrisonborgess.github.io/IMC/" target="_blank" class="projects__button button"><i class="ri-arrow-right-up-line"></i> </a>
+      </div>
+      <div class="projects__content">
+      <h3 class="projects__subtitle">iMC</h3>
+      <h2 class="projects__title">Calculadora de IMC</h2>
+      <p class="projects__description">
+      Projeto desenvolvido em HTML, CSS E Javascript para calcular o 
+      indice de massa corporal de uma pessoa.
+      </p>
+      </div>
+  
+      <div class="projects__buttons">
+      </div>
+      </article>
+  
+      <article class="projects__card">
+      <div class="projects__image">
+      <img src="assets/img/project-2.jpg" alt="image" class="projects__img">
+      <a href="https://github.com/HarrisonBorgess/Kiwii" target="_blank" class="projects__button button">
+      <i class="ri-arrow-right-up-line"></i>
+      </a>
+      </div>
+      <div class="projects__content">
+      <h3 class="projects__subtitle">Repositorio Estudantil</h3>
+      <h2 class="projects__title">Kiwii</h2>
+      <p class="projects__description">
+      Essa aplicação foi desenvolvida em Java com Spring Boot e tem o 
+      principal objetivo de reunir e compartilhar conteúdos para 
+      disciplinas acadêmicas.
+      </p>
+      </div>
+      </article>
+  
+      <article class="projects__card">
+      <div class="projects__image">
+      <img src="assets/img/project-3.jpg" alt="image" class="projects__img">
+      <a href="#" class="projects__button button">
+      <i class="ri-arrow-right-up-line"></i>
+      </a>
+      </div>
+      <div class="projects__content">
+      <h3 class="projects__subtitle">Website</h3>
+      <h2 class="projects__title">Meu Portifolio</h2>
+      <p class="projects__description">
+      Esse é o meu portfólio que utiliza HTML, CSS e JavaScript 
+      para criar esse espaço que reune minha jornada no mundo da tecnologia.
+      </p>
+      </div>
+      <div class="projects__buttons">
+      </div>
+      </article>
+      </div>
+     </section>
  
-   <!--PROJECTS-->
-   <section class="projects section" id="projects">
+   <!--testimonial-->
+   <section class="testimonial section" id="testimonial">
     <h2 class="section__title-1">
-    <span>Projetos</span>
+    <span>Depoimentos</span>
     </h2>
 
-    <div class="projects__container container grid">
-    <article class="projects__card">
-    <div class="projects__image">
-    <img src="assets/img/project-1.jpg" alt="image" class="projects__img">
-    <a href="https://harrisonborgess.github.io/IMC/" target="_blank" class="projects__button button"><i class="ri-arrow-right-up-line"></i> </a>
+    <div class="testimonial__container container grid">
+    <article class="testimonial__card">
+    <div class="testimonial__image">
+    <img src="assets/img/testimonial-1.jpg" alt="image" class="testimonial__img">
     </div>
-    <div class="projects__content">
-    <h3 class="projects__subtitle">iMC</h3>
-    <h2 class="projects__title">Calculadora de IMC</h2>
-    <p class="projects__description">
-    Projeto desenvolvido em HTML, CSS E Javascript para calcular o 
-    indice de massa corporal de uma pessoa.
+    <div class="testimonial__content">
+    <h3 class="testimonial__subtitle">Ex-chefe, Christiane Maluf.</h3>
+    <p class="testimonial__description">
+   <i> "Sempre demostrou competência profissional e lealdade, além
+    de possuir facilidade para trabalhar em equipe e ter uma boa comunicação." </i>
     </p>
     </div>
-
-    <div class="projects__buttons">
+    <div class="testimonial__buttons">
     </div>
     </article>
 
-    <article class="projects__card">
-    <div class="projects__image">
-    <img src="assets/img/project-2.jpg" alt="image" class="projects__img">
-    <a href="https://github.com/HarrisonBorgess/Kiwii" target="_blank" class="projects__button button">
-    <i class="ri-arrow-right-up-line"></i>
+    <article class="testimonial__card">
+    <div class="testimonial__image">
+    <img src="assets/img/testimonial-2.jpg" alt="image" class="testimonial__img">
     </a>
     </div>
-    <div class="projects__content">
-    <h3 class="projects__subtitle">Repositorio Estudantil</h3>
-    <h2 class="projects__title">Kiwii</h2>
-    <p class="projects__description">
-    Essa aplicação foi desenvolvida em Java com Spring Boot e tem o 
-    principal objetivo de reunir e compartilhar conteúdos para 
-    disciplinas acadêmicas.
-    </p>
+    <div class="testimonial__content">
+    <h3 class="testimonial__subtitle">Colega de curso, Oseias Lopes.</h3>
+    
+    <p class="testimonial__description">
+      <i>"Em todos os projetos, sempre faz além do atribuído, 
+        mantendo sempre a paciência. Sabe equilibrar o bom humor e as responsabilidades."</i>
+      </p>
     </div>
     </article>
 
-    <article class="projects__card">
-    <div class="projects__image">
-    <img src="assets/img/project-3.jpg" alt="image" class="projects__img">
-    <a href="#" class="projects__button button">
-    <i class="ri-arrow-right-up-line"></i>
+    <article class="testimonial__card">
+    <div class="testimonial__image">
+    <img src="assets/img/testimonial-3.png" alt="image" class="testimonial__img">
     </a>
     </div>
-    <div class="projects__content">
-    <h3 class="projects__subtitle">Website</h3>
-    <h2 class="projects__title">Meu Portifolio</h2>
-    <p class="projects__description">
-    Esse é o meu portfólio que utiliza HTML, CSS e JavaScript 
-    para criar esse espaço que reune minha jornada no mundo da tecnologia.
-    </p>
+    <div class="testimonial__content">
+    <h3 class="testimonial__subtitle">Ex-professor, Hamilton Sobrinho.</h3>
+    <p class="testimonial__description">
+    <i> "Aluno excelente, demostrou total dedicação ao estudos e contribuiu positivamente no ambiente acadêmico." </i>
     </div>
-    <div class="projects__buttons">
+    <div class="testimonial__buttons">
     </div>
     </article>
     </div>
@@ -353,7 +405,7 @@
     <ul class="footer__links">
     <li><a class="footer__link" href="#about">Sobre</a></li>
     <li><a class="footer__link" href="#experience">Experiências</a></li>
-    <li><a class="footer__link" href="#projects">Projetos</a></li>
+    <li><a class="footer__link" href="#testimonial">Projetos</a></li>
     </ul>
 
     <span class="footer__copy">
