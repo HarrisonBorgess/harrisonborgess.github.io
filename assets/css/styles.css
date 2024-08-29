@@ -94,7 +94,7 @@ body.dark-theme {
 .dark-theme .contact__social {
   display: grid;
   row-gap: 1rem;
-  background-color:hsl(0deg 0% 10.2%);
+  background-color:hsl(0deg 0% 12.16%);
   padding-block: 1rem 2rem;
   text-align: center;
 }
@@ -172,7 +172,7 @@ body.dark-theme {
     .dark-theme .contact__social {
       display: grid;
       row-gap: 1rem;
-      background-color:hsl(0deg 0% 7.84%);
+      background-color:hsl(0deg 0% 12.16%);
       padding-block: 1rem 2rem;
       text-align: center;
     }
@@ -429,7 +429,7 @@ img {
 .home__subtitle {
   position: relative;
   font-size: var(--h2-font-size);
-  color:#d69346;   
+  color:#20774b;   
   margin-bottom: 1rem;
   margin-left: 5px;
 }
