@@ -81,6 +81,9 @@ body.dark-theme {
 	the website, in dark theme
 ==========*/
 
+.dark-theme .home__subtitle {
+  color:#ffffff;   
+}
 
 .dark-theme .home__description{
   color: #ffffff;
@@ -175,6 +178,7 @@ body.dark-theme {
       background-color:hsl(0deg 0% 12.16%);
       padding-block: 1rem 2rem;
       text-align: center;
+
     }
   }
 }
@@ -429,7 +433,7 @@ img {
 .home__subtitle {
   position: relative;
   font-size: var(--h2-font-size);
-  color:#20774b;   
+  color:#000000;   
   margin-bottom: 1rem;
   margin-left: 5px;
 }
